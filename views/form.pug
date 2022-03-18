@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+  body
+    h1 Enter new message
+    form(action='/new' method='POST')
+      label(for='author') Author
+      input(type='text' id='author' name="messageUser")
+      br
+      label(for='message') Message
+      input(type='text' id='message' name="messageText")
+      br
+      button(type='submit') Enter message
+
